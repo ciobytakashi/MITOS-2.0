@@ -1,4 +1,17 @@
 plugins {
-    id("com.android.application") version "8.7.3" apply false
-    id("org.jetbrains.kotlin.android") version "2.0.21" apply false
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.mitos.app"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.mitos.app"
+        minSdk = 26
+        targetSdk = 35
+        versionCode = 2
+        versionName = "2.0.0"
+    }
 }
